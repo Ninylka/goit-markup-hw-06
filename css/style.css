@@ -848,7 +848,7 @@ margin-bottom: 16px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8E8F99;
-margin-bottom: 8px;
+margin-bottom: 4px;
 
 }
 
@@ -899,7 +899,7 @@ fill: var(--third-text-color);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.2);
     border-radius: 4px;
     background-color: transparent;
     padding: 8px 16px;
@@ -930,7 +930,7 @@ transition: border-color var(--transition);
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: background-color var(--third-text-color), border var(--transition), fill var(--transition);
+    transition: background-color var(--transition), border var(--transition), fill var(--transition);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -952,7 +952,7 @@ transition: border-color var(--transition);
 height: 56px;
 margin: 0 auto;
 background: #4D5AE5;
-font-family: 'Roboto';
+font-family: var(--primary-font);
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -966,6 +966,11 @@ border-radius: 4px;
 transition: background-color var(--transition);
 }
 
+.modal-form-submit:focus,
+.modal-form-submit:hover{
+    background-color: #404BBF;
+    transition: var(--transition);
+}
 
 /* modal footer */
 .text-subscribe{
@@ -1016,8 +1021,9 @@ padding-left: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto';
+    font-family: var(--primary-font);
     font-style: normal;
+    font-weight: 500;
         font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;

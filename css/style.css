@@ -877,6 +877,7 @@ transition: border-color var(--transition);
     position: absolute;
     left: 16px;
     top: 50%;
+    fill: #2E2F42;
     transform: translateY(-50%);
     transition: fill var(--transition);
 }
@@ -902,6 +903,7 @@ fill: var(--third-text-color);
     border: 1px solid rgba(46, 47, 66, 0.2);
     border-radius: 4px;
     background-color: transparent;
+    display: block;
     padding: 8px 16px;
    outline: transparent;
     resize: none;
@@ -984,8 +986,7 @@ margin-bottom: 16px;
 
 
  .container-subscribe{
-       padding-top: 140px;
-    margin-left: 80px;
+        margin-left: 80px;
     
 
  }
